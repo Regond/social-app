@@ -1,0 +1,92 @@
+.register {
+    height: 100vh;
+    background: rgb(146, 196, 228);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .card {
+        width: 55%;
+        display: flex;
+        flex-direction: row-reverse;
+        background-color: white;
+        min-height: 700px;
+        .leftSide {
+            flex:1;
+            background: url('https://i.pinimg.com/736x/d5/0b/d2/d50bd25b9cc865495b31a97e7a1eed18.jpg') center;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            padding: 55px;
+            gap:470px;
+            color: white;
+            .cover{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                button{
+                    width: 30%;
+                }
+            }
+
+
+        }
+        .rightSide {
+            flex:1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color:rgb(75,78,80);
+            font-family: "Alegreya", serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+            padding: 55px;
+            
+            h1{
+                font-size: 72px;
+            }
+            form{
+                width: 60%;
+                display: flex;
+                flex-direction: column;   
+                .error{
+                    color: red;
+                    font-size: 20px;
+                    margin: 0 auto;
+                }
+                input{
+                    padding: 0 10px 0 10px;
+                    height: 35px;
+                    border: none;
+                    border-bottom: 1px solid rgb(75,78,80);
+                }
+                button{
+                    margin: 20px auto 10px auto;
+                    border: none;
+                    width: 55%;
+                    height: 45px;
+                    border-radius: 15px;
+                    background-color: rgb(75,78,80);
+                    color: white;
+                    cursor: pointer;
+                    font-size: 20px;
+                    font-family: "Alegreya", serif;
+                    font-optical-sizing: auto;
+                    font-style: normal;
+                }
+                p{
+                    margin: 0;
+                    padding: 15px 0 0 0;
+                }
+            }
+            button{
+                background-color: white;
+                border: none;
+                cursor: pointer;
+            }
+        }
+
+
+
+    }
+}

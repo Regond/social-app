@@ -1,0 +1,22 @@
+.drag-drop-zone {
+    border: 2px dashed #084cdf;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #c0c0c0;
+    .cover {
+        width: 100%;
+        height: 100%;
+        border: 2px dotted #084cdf;
+        padding: 5px;
+    }
+  }
+  
+  .drag-drop-zone.dragging {
+    background-color: #084cdf;
+  }
+  

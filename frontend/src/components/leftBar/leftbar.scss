@@ -1,0 +1,92 @@
+.leftbar{
+    flex: 2;
+    margin: 6px 3px;
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 111px;
+    height: calc(100vh - 111px);
+    
+    .container{
+        width: 98%;
+
+        .accountContainer {
+            padding: 15px;
+            border-radius: 10px;
+            background-color: white;
+            color: rgb(167, 166, 166); 
+            margin: 10px 0;
+            h4{
+                padding: 0;
+                margin: 0 0 0 5px;
+            }
+
+            .accountInfo {
+                .item {
+                    cursor: pointer;
+                    display: flex;
+                    align-items: center;
+                    gap: 15px;
+                    .icon {
+                        font-size: 32px;
+                    }
+                    span {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+        .chatsContainer{
+            padding: 15px;
+            border-radius: 10px;
+            background-color: white;
+            color: rgb(167, 166, 166); 
+            margin: 3px 0;
+            h4{
+                padding: 0;
+                margin: 0 0 0 5px;
+            }
+            .chats {
+                .item {
+                    cursor: pointer;
+                    margin: 5px 0;
+                    background-color: #F5F5F5;
+                    border-radius: 25px;
+                    padding: 10px 10px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    .info {
+                        display: flex;
+                        align-items: center;
+                        .circle {
+                            height: 40px;
+                            width: 40px;
+                            border-radius: 50%;
+                            background: rgb(131,58,180);
+                            background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 56%, rgba(252,176,69,1) 100%);
+                        }
+                        span {
+                            margin-left: 10px;
+                            text-decoration: none;
+                        }
+                    }
+  
+                    .online {
+                        height: 10px;
+                        width: 10px;
+                        border-radius: 50%;
+                        background-color:chartreuse;
+                    }
+                    .offline {
+                        height: 10px;
+                        width: 10px;
+                        border-radius: 50%;
+                        background-color:grey;
+                    }
+                }
+            }
+        }
+
+    }
+}

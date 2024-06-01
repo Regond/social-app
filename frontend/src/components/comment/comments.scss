@@ -1,0 +1,104 @@
+.comments {
+    padding: 10px 15px;
+    .writeComment {
+        padding: 10px 0;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        border: 2px solid #e6e4e4;
+        border-radius: 10px;
+        padding: 10px;
+        flex-direction: column;
+        align-items: flex-start;
+        .replyTo {
+            display: flex;
+            .cover {
+                p {
+                    padding: 0;
+                    margin: 0;
+                }
+            }
+
+        }
+        .cover {
+            display: flex;
+            width: 100%;
+            align-items: center;
+            justify-content: space-between;
+            gap: 10px;
+            img {
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                object-fit: cover;
+            }
+            input {
+                border: none;
+                background-color: white;
+                color: black;
+                height: 40px;
+                width: 80%;
+                border-radius: 10px;
+                padding: 0px 8px;
+            }
+        }
+
+        button {
+            border: none;
+            padding: 10px;
+            color: #1E74FD;
+            cursor: pointer;
+            background-color: #e6e4e4;
+            border-radius: 10%;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+        }
+
+    }
+
+    .comment {
+        padding: 18px;
+        margin: 15px 0px;
+        display: flex;
+        border-radius: 10px;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #e6e4e4;
+        gap: 20px;
+        position: relative;
+        .reply {
+            position: absolute;
+            bottom: 50px;
+            left: 78px;
+            color: rgb(150, 150, 150);
+
+        }
+        img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            object-fit: cover;;
+        }
+        .info {
+            flex:5;
+            display: flex;
+            p {
+                padding: 0;
+                margin: 0;
+            }
+            
+        }
+        .replyIcon {
+            color: grey;
+            cursor: pointer;
+            font-size: 32px;
+        }
+
+        .time {
+            flex:1;
+            color: gray;
+            font-size: 12px;
+        }
+    }
+
+}

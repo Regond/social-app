@@ -1,0 +1,161 @@
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 30px;
+    height: 100px;
+    color: #0055FF;
+    background-color: #FFFFFF;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    .center {
+        display: flex;
+        align-items: center;
+        gap: 50px;
+        .searchBar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50px;
+            background-color: #EEEEEE;
+            border-radius: 10px;
+            padding: 5px;
+            input {
+                height: 50px;
+                border: none;
+                width: 400px;
+                border-radius: 10px;
+                background-color: #EEEEEE;
+                font-size: 14px;
+                font-family: 'Montserrat', sans-serif
+            }
+            input:focus {
+                outline: none;
+                border: none;
+            }
+            .searchIcon {
+                color: #CED4DA;
+                font-size: 36px;
+            }
+        }
+        .cover {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            .circle {
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: #F5F5F5;
+                .icon {
+                    font-size: 36px;
+                    color: #ADB5BD;
+                }
+            }
+            .active {
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: #D2E3FF;
+                .activeIcon {
+                    font-size: 36px;
+                    color: #1060FF;
+                }
+            }
+        }
+
+    }
+    .leftCard{
+        gap: 20px;
+        display: flex;
+        align-items: center;
+        .logo {
+            display: flex;
+            align-items: center;
+            gap:5px;
+            span {
+                font-family: "Fredoka", sans-serif;
+                font-optical-sizing: auto;
+                font-weight: 700;
+                font-style: normal;
+                font-variation-settings: "wdth" 100;
+                font-size: 32px;
+            }
+            img {
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                object-fit: cover;
+            }
+        }
+
+
+    }
+    
+    .rightCard{
+        display: flex;
+        align-items: center;
+        position: relative;
+        gap: 15px;
+        .notification {
+            color: #0055FF; 
+            font-size: 36px;
+        }
+        .anim {
+            color: #0055FF; 
+            position: relative;
+            animation: bellAnimation 1s ease infinite alternate;
+            font-size: 36px
+        }
+        @keyframes bellAnimation {
+            0% {
+                transform: rotate(0deg) translateY(0);
+            }
+            25% {
+                transform: rotate(10deg) translateY(-5px);
+            }
+            50% {
+                transform: rotate(-10deg) translateY(5px);
+            }
+            75% {
+                transform: rotate(5deg) translateY(-2px);
+            }
+            100% {
+                transform: rotate(0deg) translateY(0);
+            }
+        }
+        .notificationsCount {
+            animation: bellAnimation 1s ease infinite alternate;
+            position: absolute;
+            top:5px;
+            left: 3px;
+            width: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 12px;
+            border-radius: 50%;
+            background-color: red;
+            .count {
+                color: white;
+                font-size: 12px;
+            }
+        }
+        .user {
+            display: flex;
+            align-items: center;
+        }
+        img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+    }
+}
